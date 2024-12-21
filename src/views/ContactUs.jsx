@@ -1,32 +1,29 @@
 import React from 'react';
-import './ContactUs';
+import './ContactUs.css'; // Adding a CSS file for styling
 
 const ContactUs = () => {
   return (
-    <div className="container mt-5">
-      <h2>Contact Us</h2>
-      <form>
-        <div className="mb-3">
-          <label htmlFor="name" className="form-label">
-            Name
-          </label>
-          <input type="text" className="form-control" id="name" placeholder="Enter your name" />
+    <div className="contact-container">
+      <h2 className="contact-title">Contact us</h2>
+      <p className="contact-description">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas
+        laoreet ipsum dolor sit amet, consectetur adipiscing elit. Maecenas
+        laoreet ipsum dolor sit amet.
+      </p>
+      <form className="contact-form">
+        <div className="input-group">
+          <label htmlFor="name">Name</label>
+          <input type="text" id="name" placeholder="Enter your name" />
         </div>
-        <div className="mb-3">
-          <label htmlFor="email" className="form-label">
-            Email
-          </label>
-          <input type="email" className="form-control" id="email" placeholder="Enter your email" />
+        <div className="input-group">
+          <label htmlFor="phone">Phone</label>
+          <input type="text" id="phone" placeholder="Enter your phone number" />
         </div>
-        <div className="mb-3">
-          <label htmlFor="message" className="form-label">
-            Message
-          </label>
-          <textarea className="form-control" id="message" rows="5" placeholder="Write your message"></textarea>
+        <div className="input-group">
+          <label htmlFor="email">Email</label>
+          <input type="email" id="email" placeholder="Enter your email" />
         </div>
-        <button type="submit" className="btn btn-primary">
-          Submit
-        </button>
+        <button type="submit" className="submit-button">Submit</button>
       </form>
     </div>
   );

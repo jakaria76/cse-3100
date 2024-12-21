@@ -1,24 +1,63 @@
-import React from 'react';
-import './AboutUs.css';
-const AboutUs = () => {
+import React from "react";
+import "./AboutUs.css";
+
+export default function AboutUs() {
   return (
-    <div className="container mt-5">
+    <div className="about-container">
+      <section className="text-center mt-4">
       <h2>About Us</h2>
-      <p>
-        Welcome to Purrfect Adoption! Our mission is to help connect loving families with cats in need of forever homes.
-        We believe every cat deserves a chance to live a happy and healthy life, and we strive to make that possible.
-      </p>
-      <p>
-        Established in 2024, Purrfect Adoption has successfully placed hundreds of cats with caring families. Our team
-        of dedicated volunteers works tirelessly to ensure that every adoption is a purrfect match.
-      </p>
-      <p>
-        Thank you for considering adoption and supporting our mission. Together, we can make a difference in the lives
-        of countless cats.
-      </p>
+      </section>
+
+      <section className="goals-section text-left mt-4">
+        <h2>Our Goals</h2>
+        <p>
+          To provide a safe and loving environment for cats, and to ensure they
+          are adopted into caring homes.
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis blanditiis fugiat maxime doloremque neque? Suscipit officia earum rem! Illo a magnam animi delectus, harum quidem laborum autem eos. In, aspernatur excepturi. Numquam.
+        </p>
+      </section>
+
+      <section className="achievements-section text-left mt-4">
+        <h2>Our Achievements</h2>
+        <p>
+          Over 500 cats rescued and rehomed. Recognized as one of the leading
+          cat adoption centers in the country.
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora pariatur corporis natus quis atque ut, sequi quam esse vitae deserunt labore, quia similique alias asperiores minima minus, dolore ipsam laudantium non quibusdam.
+        </p>
+      </section>
+
+      <section className="team-section text-left mt-4">
+        <h2>Our Team</h2>
+        <div className="team-members">
+          <div className="team-card">
+            <img
+              src="/assets/pic1.jpg"
+              alt="Team Member 1"
+              className="team-photo"
+            />
+            <h3 className="team-name">MD JAKARIA</h3>
+            <p className="team-position">Founder & Director</p>
+          </div>
+          <div className="team-card">
+            <img
+              src="/assets/pic3.jpg"
+              alt="Team Member 2"
+              className="team-photo"
+            />
+            <h3 className="team-name">MD RABBI</h3>
+            <p className="team-position">Adoption Coordinator</p>
+          </div>
+          <div className="team-card">
+            <img
+              src="/assets/pic2.jpg"
+              alt="Team Member 3"
+              className="team-photo"
+            />
+            <h3 className="team-name">MD REDWAN</h3>
+            <p className="team-position">Veterinary Specialist</p>
+          </div>
+        </div>
+      </section>
     </div>
   );
-};
-
-export default AboutUs;
-
+}

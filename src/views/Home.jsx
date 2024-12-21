@@ -49,7 +49,7 @@ export default function Home() {
                   src={cat.image}
                   alt={cat.name}
                   className="img-fluid mb-2"
-                  style={{ borderRadius: '8px', height: '200px', objectFit: 'cover' }}
+                  style={{ borderRadius: '8px', height: '180px', objectFit: 'cover' }}
                 />
                 <div className="cat-info">
                   <h3 className="h5 mb-1">{cat.name}</h3>
